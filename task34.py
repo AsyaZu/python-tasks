@@ -7,8 +7,8 @@ def array (list):
     return list
 
 def change_array (list):
-    for i in list:
-        i = -i
+    for i in range(0, 5):
+        list[i] = -1*list[i]
     return list
 
 list = []
