@@ -2,16 +2,12 @@
 import random
 def array (list):
     for i in range(0, 5):
-        i = random.randint(0, 5)
+        i = random.randint(0, 10)
         list.append(i)
     return list
 
 def find_el (list, num):
-    answer = 'false'
-    for i in list:
-        if i == num:
-            answer = 'true '
-    return answer
+    return (num in list)
 
 list = []
 print(array(list))
